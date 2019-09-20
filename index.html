@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Subscription Box Idea</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand">Subscription Box Idea</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h3 class="mb-5">Get a new Idea for running your Subcription Box business! v1 </h3>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-12">
+                <!--<input type="email" class="form-control form-control-lg" placeholder="Enter your email...">-->
+                <h1 id="demo"></h1>
+              </div>
+              <div class="col-12 col-md-3"></div>
+                <button type="submit" class="btn btn-block btn-lg btn-primary">New Idea Please!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">Build with fun in Leichlingen, Germany</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; No rights. The idea is all yours in 2019 and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+      var vowelRegex = '^[aieouAIEOU].*'
+
+      var emotion_array = [ "Joyful",
+"Cheerful",
+"Contented",
+"Proud",
+"Satisfied",
+"Excited",
+"Amused",
+"Elated",
+"Enthusiastic",
+"Optimistic",
+"Elated",
+"Delighted",
+"Calmed",
+"Relaxed",
+"Relieved",
+"Hopeful",
+"Pleased",
+"Confident",
+"Braved",
+"Comfortable",
+"Safe",
+"Happy",
+"Love",
+"Lust",
+"Aroused",
+"Tender",
+"Compassionate",
+"Caring",
+"Infatuated",
+"Concern",
+"Trust",
+"Liking",
+"Attraction",
+"Tenderness",
+"Sympathy",
+"Adoration",
+"Fondness",
+"Receptive",
+"Interested",
+"Delighted",
+"Shocked",
+"Exhilarated",
+"Dismayed",
+"Amazed",
+"Confused",
+"Stunned",
+"Interested",
+"Intrigued",
+"Absorbed",
+"Curious",
+"Anticipating",
+"Eager",
+"Hesitant",
+"Fearful",
+"Anxious",
+"Worried",
+"Scared",
+"Insecure",
+"Rejected",
+"Horrified",
+"Alarmed",
+"Shocked",
+"Panicked",
+"Afraid",
+"Nervous",
+"Disoriented",
+"Helpless",
+"Powerless",
+"Dreading",
+"Distrusting",
+"Suspicious",
+"Cautious",
+"Disturbed",
+"Overwhelmed",
+"Uncomfortable",
+"Guilty",
+"Hurt",
+"Lonely",
+"Melancholy ",
+"Depressed",
+"Hopeless",
+"Sad",
+"Guilty",
+"Hurt",
+"Lonely",
+"Regretful",
+"Depressed",
+"Hopeless",
+"Sorrow",
+"Uncertain",
+"Anguished",
+"Disappointed",
+"Self conscious",
+"Shamed",
+"Embarrassed",
+"Humiliated",
+"Disgraced",
+"Uncomfortable",
+"Neglected",
+"Defeated",
+"Bored",
+"Rejected",
+"Disillusioned",
+"Inferior",
+"Confused",
+"Grief-stricken",
+"Helpless",
+"Isolated",
+"Numb",
+"Regretful",
+"Ambivalent",
+"Exhausted",
+"Insecure",
+"Disgusted",
+"Pity",
+"Revulsion",
+"Contempt",
+"Weary",
+"Bored",
+"Preoccupied",
+"Angry",
+"Jealous",
+"Envious",
+"Annoyed",
+"Humiliated",
+"Irritated",
+"Aggravated",
+"Restless",
+"Grumpy",
+"Awkward",
+"Exasperated",
+"Frustrated",
+"Rageful",
+"Outraged",
+"Hostile",
+"Bitter",
+"Hateful",
+"Scornful",
+"Spiteful",
+"Vengeful",
+"Disliked",
+"Resentful",
+"Trusting ",
+"Alienated",
+"Bitter",
+"Insulted",
+"Indifferent",
+
+"Bright","Happy","Sad","Angry","Loud"];
+  
+      var index = Math.floor(Math.random()*emotion_array.length) + 1;
+      var emotion_str ="";
+      if (index < emotion_array.length)
+      { 
+          emotion_str=emotion_array[index]
+      }
+  
+      var item_array= [
+          "Hawaiian Shirt",
+          "Chocolate bar",
+          "Non-fiction book"
+        ];
+      var item_str=item_array[Math.floor(Math.random()*item_array.length)];
+  
+      var period_array=["2 week","week","3 week","month", "2 months", "quarter"];
+      var period_str=period_array[Math.floor(Math.random()*period_array.length)];
+  
+      var duration_array=["3 years","1 year","2 years", "4 years"];
+      var duration_str=duration_array[Math.floor(Math.random()*duration_array.length)];
+      
+      var event_array=["during a bottle of wine","eating sushi","picnic at the park","drinking cocktail"]
+      var event_str=event_array[Math.floor(Math.random()*event_array.length)];
+
+      var matched = emotion_str.match(vowelRegex)
+
+      var display_string = "";
+
+      if (matched) {
+        display_string = "An "
+      } else {
+        display_string = "A "
+      }
+
+      display_string = display_string + emotion_str + " " +item_str+" every "+period_str+" for "+duration_str+" during "+event_str+".";
+  
+      document.getElementById("demo").innerHTML = display_string;
+  </script>
+
+</body>
+
+</html>
